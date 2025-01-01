@@ -18,9 +18,7 @@ class str{
         if ( str_inner != 0){ 
             free(str_inner); str_inner = NULL; return;
         }
-        #ifdef STRING_MEMORY_CONTROL_BLOCK
             exit(102); // Throw exception
-        #endif
     }
     // If string visible in console(printable string) return true(1), else false(0)
     inline bool isprint() const{
